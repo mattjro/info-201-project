@@ -15,25 +15,25 @@ ui <- fluidPage(
                         img(alt = "Image of exam", 
                             src = "https://i0.wp.com/academiamag.com/wp-content/uploads/2022/05/shutterstock_1664708983.jpg?w=860&ssl=1" ),
                         h1("Project purpose"),
-                        p("The report provides a broad summary of how different factors ( gender, race, parental level of education ,
-                          lunch, and test preparation ) affect students' grade in this exam ( math, reading, 
-                          and writing. With the results, we hope to display how different factors affect students' 
-                          performance in general examinations ( not only in the dataset exam ) in order to help 
+                        p("The report provides a broad summary of how different factors (gender, race, parental level of education ,
+                          lunch, and test preparation) affect students' scores in an exam (math, reading, 
+                          and writing. With the results, we hope to infer how these different factors affect students' 
+                          performance in exams in general (not only in the dataset exam), in order to help 
                           teachers improve their teaching strategies, 
                           students improve their learning strategies, and guide school administration in their policies. 
-                          Also, in our website, we will pay more attention on how gender is correlated with students' 
-                          Academic Performance ( and test the common belief male is good at stem subjects while
-                          female is good at liberal art subjects) "),
+                          Also, in our website, we will focus especially on how gender is correlated with students' 
+                          Academic Performance ( and test the common belief that people who identify as male are good at stem subjects while
+                          people who identify as female are good at liberal art subjects) "),
                         h2("Data Set"),
                         a( href = "https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams", "click here to 
-                           check this students perofrmance in exams dataset"),
-                        p("In this website we will explore the dataset which is 
-                          about the performance of students in three separate exams including a math exam, a reading exam, 
+                           check these students' performance in the exams dataset"),
+                        p("In this website we will explore this dataset 
+                          about the performance of students in three separate exams: a math exam, a reading exam, 
                           and a writing exam. We found this dataset on kaggle.com after searching for a dataset with both numerical 
                           and categorical data involved. Aman Chauhan who is labeled as an Expert under 
                           Kaggle’s progression system collected this dataset. He is ranked 67 out of 72,128 competitors. "),
-                        p("52% of the studentsn are male and 48% are female. There are many different ethnic groups that are labeled A-E for either 
-                        privacy concerns or maybe context is not needed. Group C takes up 32% of the sample while Group D takes up about 26% of the sample. 
+                        p("52% of the students are male and 48% are female. There are many different ethnic groups that are labeled A-E for either 
+                        privacy concerns or perhaps context is not needed. Group C takes up 32% of the sample while Group D takes up about 26% of the sample. 
                         Also, one inference we can make based on the data is that these students might not all be in a similar geographical location because 
                         most districts will have either all standard lunches or all free/reduced lunches. This makes sense since some students had a test preparation 
                         course while some did not. The lunch variable is categorical, with observations being binary (two options). These can be either “standard” or “free/reduced”. 
@@ -71,7 +71,7 @@ ui <- fluidPage(
                ),
                tabPanel("The relationship between gender and subjects (table)",
                         h1("Score table ( group by gender )"),
-                        p("this tab allows users choose different exam combo and gender combinations. This table is arranged from the highest total socres to 
+                        p("this tab allows users choose different exam and gender combinations. This table is arranged from the highest total scores to 
                           lowest one"),
                         sidebarLayout(
                           sidebarPanel(
@@ -96,7 +96,7 @@ ui <- fluidPage(
                tabPanel("the relationship between different factors and exams",
                         h1(" Average score "),
                         p("In this panel, users can explore the relationships between"),
-                        p("different factors (race/ethnicity,parental level of education, lunch, test preparation course"),
+                        p("different factors (race/ethnicity, parental level of education, lunch, test preparation course"),
                         p("and different exams (math, reading, writing)"),
                         sidebarLayout(
                           sidebarPanel(
@@ -120,44 +120,44 @@ ui <- fluidPage(
                             src = "https://img.freepik.com/free-photo/final-exam-results-test-reading-books-words-concept_53876-123721.jpg"),
                         h1("Conclusion"),
                         p("From our data, we can find (summary by factors):"),
-                        tags$li("Gender: male do better in math exam than females. However, female has higher average scores in 
-                                wrting and reading than male"),
+                        tags$li("Gender: Males do better in math exam than females. However, females have higher average scores in 
+                                writing and reading than males have"),
                         p(" "),
-                        tags$li("Race: group E has the highest average score in math exam, while group c has
+                        tags$li("Race: Group E has the highest average score in math exam, while group c has
                                 the lowest score in math exam. Group E has the highest average score in reading while 
-                                group C has the lowest score. group D has the highest average score in s
-                                writing exam while group C has the lowest score. Overall, group E did 
+                                group C has the lowest score. Group D has the highest average score in s
+                                writing exam while group C has the lowest score. Overall, Group E did 
                                 best in these exams while group C did worst in these exams"),
                         p(" "),
-                        tags$li("Parental level of education: students with master's degree parents has highest 
-                               score in math, writing and reading exams while students with high school
-                               degree parents has the lowest score in math, writing and reading exams"),
+                        tags$li("Parental level of education: students that are children of parents with a master's degree have the highest 
+                               score in math, writing and reading exams while students that are children of parents with high school degree
+                                have the lowest score in math, writing and reading exams"),
                         p(" "),
                         tags$li("Lunch: students with standard lunch have higher score than students with free or 
-                               standard lunch. Also, we found lunch level affects math most"),
+                               standard lunch. Also, we found that the students' lunch status affects math scores the most"),
                         p(" "),
-                        tags$li("Test preparation course: students who completed test 
-                               preparation course has higher score than students who 
-                               did not finish the course. Also, test preparation has 
-                               affects reading exam most."),
+                        tags$li("Test preparation course: students who completed the test 
+                               preparation course have higher scores than students who 
+                               did not finish the course. Also, test preparation scores 
+                               affect reading exam the most."),
                         h2("Quality of Data"),
-                        p("While we found our data reasonable and clear, the data leaves out some of 
+                        p("While we found our data reasonable and clear, the data leaves out some  
                           important factors such as gender, race and test preparation which are
                           the most common factors when we evaluate students' grades."),
                         p("However, it still gives some biased results. For example, for race / ethnicity, 
-                          35% student from group C, 26% students from group D in this dataset. Becasue 
-                          of the different amount of students from different race group, therefore, when we
+                          35% student from group C, 26% students from group D in this dataset. Because 
+                          of the different amount of students from different race groups, when we
                           analyse the dataset, we would get the biased result ( different races affect 
                           student performance ). Also, because of the biased result, if some teachers check 
                           this result, they may pay more attention on students who come from race group E, and 
-                          ignore students who come from race group C (becasue students from group E get the highest 
-                          score in these exams while students from group C get the lowest score )
+                          ignore students who come from race group C (becasue students from group E got the highest 
+                          score in these exams while students from group C got the lowest score )
                           "),
                         h3("Future Idea"),
                         p("For future research, we would like to include datasets that 
-                        contain different factors and exams. In detail, we can add more 
+                        contain more different factors and exams. For example, we can add more 
                           exams like Chinese, chemistry ... Also, to get unbiased results, 
-                          we will try our best to find some datasets which contain same or similar amount 
+                          we will try our best to find datasets that contain the same or similar amount of
                           samples in each factor")
                         
                         

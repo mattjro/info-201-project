@@ -15,28 +15,28 @@ ui <- fluidPage(
                         img(alt = "Image of exam", 
                             src = "https://i0.wp.com/academiamag.com/wp-content/uploads/2022/05/shutterstock_1664708983.jpg?w=860&ssl=1" ),
                         h1("Project purpose"),
-                        p("The report provides a broad summary of how different factors ( gender,race, parental level of education ,
-                          lunch, and test preparation ) affect students grade in this exam ( math, reading, 
-                          and wring. With the results, we hope to display how different factors affect students' 
-                          performance in general exam ( not only in the dataset exam ) in oder to help 
+                        p("The report provides a broad summary of how different factors ( gender, race, parental level of education ,
+                          lunch, and test preparation ) affect students' grade in this exam ( math, reading, 
+                          and writing. With the results, we hope to display how different factors affect students' 
+                          performance in general examinations ( not only in the dataset exam ) in order to help 
                           teachers improve their teaching strategies, 
-                          students imrove their learning strategies, and school administration change their policy. 
-                          Also, In our website, we will pay more attention on how can differnt gender affects students' 
+                          students improve their learning strategies, and guide school administration in their policies. 
+                          Also, in our website, we will pay more attention on how gender is correlated with students' 
                           Academic Performance ( and test the common belief male is good at stem subjects while
                           female is good at liberal art subjects) "),
                         h2("Data Set"),
                         a( href = "https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams", "click here to 
                            check this students perofrmance in exams dataset"),
-                        p("In this website we will exlpore the dataset which is 
+                        p("In this website we will explore the dataset which is 
                           about the performance of students in three separate exams including a math exam, a reading exam, 
                           and a writing exam. We found this dataset on kaggle.com after searching for a dataset with both numerical 
                           and categorical data involved. Aman Chauhan who is labeled as an Expert under 
                           Kaggle’s progression system collected this dataset. He is ranked 67 out of 72,128 competitors. "),
-                        p("There are students with 52% being male and 48% being female. There are many different ethnic groups that are labeled A-E for either 
+                        p("52% of the studentsn are male and 48% are female. There are many different ethnic groups that are labeled A-E for either 
                         privacy concerns or maybe context is not needed. Group C takes up 32% of the sample while Group D takes up about 26% of the sample. 
                         Also, one inference we can make based on the data is that these students might not all be in a similar geographical location because 
                         most districts will have either all standard lunches or all free/reduced lunches. This makes sense since some students had a test preparation 
-                        course while some did not.The lunch variable is categorical, with observations being binary (two options). These can be either “standard” or “free/reduced”. 
+                        course while some did not. The lunch variable is categorical, with observations being binary (two options). These can be either “standard” or “free/reduced”. 
                         The test preparation course variable is similar, being categorical and binary with the two options being “completed” or “none”. The math score, reading score, 
                         and writing score variables are all coded as numerical values. They are all within reasonable ranges which will be located below. The gender of the students are 
                         categorical being either male or female."),
@@ -71,8 +71,7 @@ ui <- fluidPage(
                ),
                tabPanel("The relationship between gender and subjects (table)",
                         h1("Score table ( group by gender )"),
-                        p("this tab allows users choose different exam combo with different 
-                          gender. This table is arranged from the highest total socres to 
+                        p("this tab allows users choose different exam combo and gender combinations. This table is arranged from the highest total socres to 
                           lowest one"),
                         sidebarLayout(
                           sidebarPanel(
